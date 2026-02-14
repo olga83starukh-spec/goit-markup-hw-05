@@ -524,11 +524,11 @@ img {
 .social-footer-link:focus {
   background-color: #31d0aa;
 }
+
 .footer-subscribe {
-  margin-left: 80px;
-  gap: 16px;
-  width: 453px;
-  height: 80px;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column; 
 }
 
 .footer-subscribe-text {
@@ -722,13 +722,14 @@ img {
   transform: translateY(-50%);
   left: 16px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: #2e2f42
 }
 
 .comment-field {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   height: 120px;
-  width: 360px;
+  width: 100%;
   padding: 8px 10px 0 16px;
   resize: none;
   color: #2e2f42;
@@ -740,7 +741,7 @@ img {
 .comment-field::placeholder {
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
 }
@@ -800,6 +801,7 @@ img {
 }
 
 .modal-submit-btn {
+  display: block;
   border-radius: 4px;
   padding: 16px 32px;
   background: #4d5ae5;
@@ -809,7 +811,7 @@ img {
   letter-spacing: 0.04em;
   color: #fff;
   width: 169px;
-  margin: 0 96px 0 95px;
+  margin: 0 auto;
   border: none;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
