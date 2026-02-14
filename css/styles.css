@@ -663,18 +663,10 @@ img {
   background-color: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1); 
   outline: none;
+  fill: #2e2f42;
   transition:
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-close-icon {
-  fill: #2e2f42;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-close-icon:hover,
-.modal-close-icon:focus {
-  fill: #fff;
+    fill: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close:hover,
@@ -759,7 +751,9 @@ img {
   border: 1px solid rgba(46, 47, 66, 0.4);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: none;
+  stroke:none;
   margin-right: 8px;
+  
 }
 
 .check-icon {
@@ -773,6 +767,10 @@ img {
 .input-checkbox:checked + .terms-label .custom-checkbox {
   background-color: #404bbf;
   fill: #f4f4fd;
+}
+
+.input-checkbox:checked + .terms-label .check-icon {
+  opacity: 1;
 }
 
 .input-field:focus,
